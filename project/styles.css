@@ -9,13 +9,16 @@ body {
   grid-template-rows: repeat(6, 1fr);
   grid-template-columns: repeat(4, 1fr);
   gap: 1px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .field {
   background-color: #817d8a;
   width: 60px;
   height: 60px;
   text-align: center;
-  vertical-align: middle;
   line-height: 60px;
 }
 
@@ -24,16 +27,26 @@ body {
   box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
 }
 
-#field-0 {
+#display {
   width: 100%;
   grid-row-start: 1;
   grid-row-end: 1;
   grid-column-start: 1;
   grid-column-end: 5;
+  color: rgba(35, 34, 39, 0.25);
+  text-align: right;
+  vertical-align: middle;
+  line-height: 60px;
+  font-size: 40px;
+  background-color: #817d8a;
 }
 
-#field-17 {
+#zero {
   width: 100%;
   grid-column-start: 1;
   grid-column-end: 3;
+}
+
+.highlight {
+  background-color: #534f5c;
 }
